@@ -213,5 +213,6 @@ residues_cycles_atoms: dict[str, list[list[str]]] = \
      'PRO': [['N',   'CA',  'CD',  'CB',  'CG']],
      'TRP': [['CG',  'CD1', 'CD2', 'NE1', 'CE2'],
              ['CD2', 'CE2', 'CE3', 'CZ2', 'CZ3', 'CH2']],
-     'TYR': [['CG',  'CD1', 'CD2', 'CE1', 'CE2', 'CZ']]}
+     'TYR': [['CG',  'CD1', 'CD2', 'CE1', 'CE2', 'CZ'],
+             ['CD1', 'CD2', 'CE1', 'CE2', 'CZ']]}
 
