@@ -25,10 +25,9 @@ from data_prime import archetypes, distance, proline_distance, residues_cycles_a
 # for batch run use
 try:
     from executor_prime import Return_tuple
-    executor_imported = True
 except ModuleNotFoundError:
-    executor_imported = False
-VERSION = '25-11-29'
+    pass
+VERSION = '25-12-15'
 
 
 def print_output(message, silent):
@@ -597,7 +596,7 @@ class Protein:
                             number = line.find('0.')
                             num_end = line.find(')')
                             cluster.pdb2pqr_error = float(line[number:num_end])
-                            print_output(f'ERROR: The level {correction_level} cutout {line[15:cut]} {line[cut:-1]}', executor_imported)
+                            print_output(f'ERROR: The level {correction_level} cutout {line[15:cut]} {line[cut:-1]}', self._silent)
                             self.log += f'ERROR: The level {correction_level} cutout {line[15:108]} {line[108:]}'
 
                             pdb2pqr_problem = True
@@ -667,7 +666,7 @@ class PrimaryIntegrityMeasuresTaker:
         if json_logs_dir:
             self.json_logs_dir = json_logs_dir
         else:
-            self.json_logs_dir = input_pdb_file.parent / 'logs'
+            self.json_logs_dir = sicc_af_dir
 
         self._from_executor = from_executor
         self._log = ''

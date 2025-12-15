@@ -13,7 +13,7 @@ suite.
 ```bash
 git clone https://github.com/lukasbohus/proptimus_prime
 cd proptimus_prime/
-sudo python -m venv venv_prime
+python -m venv venv_prime
 source venv_prime/bin/activate
 pip install -r requirements.txt
 ```
@@ -24,7 +24,7 @@ pip install -r requirements.txt
 python prime.py <input> [output] [-l log] [-d -s]
 ```
 #### Batch run
-This allows running PRIME over all structures in a folder. This was used for analysis over Swiss-Prot TODO
+This runs PRIME over all structures in a folder, using 10 CPU cores. This was used for the analysis of Swiss-Prot-proteins predictions in [AlphaFold DB](https://alphafold.com/) .
 ```bash
 python executor_prime.py <input_dir> 
 ```
