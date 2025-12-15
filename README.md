@@ -11,7 +11,7 @@ suite.
 ## Command line use
 ### Setup
 ```bash
-git clone https://github.com/lukasbohus/proptimus_prime
+git clone https://github.com/sb-ncbr/proptimus_prime
 cd proptimus_prime/
 python -m venv venv_prime
 source venv_prime/bin/activate
