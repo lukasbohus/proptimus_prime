@@ -24,7 +24,7 @@ pip install -r requirements.txt
 python prime.py <input> [output] [-l log] [-d -s]
 ```
 #### Batch run
-This runs PRIME over all structures in a folder, using 10 CPU cores. This was used for the analysis of Swiss-Prot-proteins predictions in [AlphaFold DB](https://alphafold.com/) .
+This runs PRIME over all structures in a folder, using 10 CPU cores. This was used for the analysis of Swiss-Prot-proteins predictions in [AlphaFold DB](https://alphafold.com/).
 ```bash
 python executor_prime.py <input_dir> 
 ```
